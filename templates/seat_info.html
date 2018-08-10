@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../static/css/normalize.min.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Welcome to LIMS - Locker Information Mangement System</h1>
+
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>Cognizant</h1>
+                        <p> </p>
+                    </header>
+
+                    <section>
+<div class="tab">
+  <p>Employee ID: {{emp_id}}</p>
+  <p>First name : {{first_name}}</p>
+  <p>Middle name: {{middle_name}}</p>
+  <p>Last name  : {{last_name}}</p>
+</div>
+
+<div class="tab">
+  <p>Project Id: {{project_id}}</p>
+  <p>Seat Number: {{seat_num}}</p>
+</div>
+
+<div class="tab">
+  <p>Key Number         : {{key_num}}</p>
+  <p>Key Status         : {{key_status}}</p>
+  <p>Key Effective Date : {{eff_date}}</p>
+  <p>Return Date        : {{return_date}}</p>
+  <p>Return Indicator   : {{key_return_ind}}</p>
+</div>
+                    </section>
+                    <footer>
+                        <h3> </h3>
+
+                        <p>
+                        <ul>
+                           <li><a href="{{url_for('home')}}">Home</a></li>
+                        </ul>
+                        </p>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                       <n style="font-family:courier;color:red;"> @copyright Cognizant propietary software. Unauthorized
+                            use is strictly prohibited</n>
+                        </p>
+                    </footer>
+                </article>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+    </body>
+</html>

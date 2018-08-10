@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../static/css/normalize.min.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Welcome to Ledger System</h1>
+
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1> Ledger View for {{viewdate}}</h1>
+                        <p>
+                        <table style="width:100%" border="border">
+                             <tr align="center">
+                                 <th>Date</th>
+                                 <th>Sales Amount</th>
+                                 <th>Expense Amount</th>
+                                 <th>Reason</th>
+                             </tr>
+                         {% for eachrow in data %}
+                        <tr align="center">
+
+                            <td>{{eachrow[0]}}</td>
+                            <td>{{eachrow[1]}}</td>
+                            <td>{{eachrow[2]}}</td>
+                            <td>{{eachrow[3]}}</td>
+                            {% endfor %}
+                        </tr>
+                    </table>
+                    </table>
+                        </p>
+                    </header>
+
+                    <section>
+                        <h2></h2>
+                        <p>
+
+                        </p>
+                    </section>
+                    <footer>
+                        <h3> </h3>
+
+                        <p>
+                             <form action="" method="post">
+                                 <input type="text" placeholder="YYYY-MM-DD" name="date">
+                                 <br>
+                                 <br>
+                                 <input type="submit" value="Submit">
+                              </form>
+                        <br>
+                        <br>
+                        <a href="{{url_for('home')}}">Home</a>
+
+
+                        </p>
+                    </footer>
+                </article>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+    </body>
+</html>

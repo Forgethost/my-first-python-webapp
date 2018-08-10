@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: grey
+  }
+
+</style>
+<body>
+
+<h2>Shipment Tracking</h2>
+
+  <div class="container">
+    <h2>Welcome to Courier Tracking System!</h2>
+    <p>Use tracking number to track shipment for top
+       Courier Providers.</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+      <form action="" method="post">
+    <input type="text" placeholder="Enter Tracking Number" name="trackingnum" required>
+    <br><br>
+ <select name="company" size="1">
+    <option value="UPS">UPS</option>
+    <option value="Fedex">Fedex</option>
+    <option value="USPS">USPS</option>
+  </select>
+      </form>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Submit">
+  </div>
+
+</body>
+</html>
